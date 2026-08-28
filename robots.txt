@@ -3,5 +3,6 @@ Allow: /
 Disallow: /assets/
 Disallow: /css/
 Disallow: /js/
+Disallow: /admin.html
 
-Sitemap: https://holambier.netlify.app//sitemap.xml
+Sitemap: https://holambier.netlify.app/sitemap.xml

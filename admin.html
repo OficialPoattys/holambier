@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Painel Holambier — Gerenciamento do Site</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== TELA DE LOGIN ===== -->
+<div id="telaLogin" class="login-tela" hidden>
+    <div class="login-card">
+        <div class="login-logo">🍺</div>
+        <h1>Holambier <span>Painel do Site</span></h1>
+
+        <form id="formLogin" autocomplete="off">
+            <div class="login-campo">
+                <label for="loginUsuario">Usuário</label>
+                <input type="text" id="loginUsuario" placeholder="admin" required>
+            </div>
+            <div class="login-campo">
+                <label for="loginSenha">Senha</label>
+                <input type="password" id="loginSenha" placeholder="••••••••" required>
+            </div>
+            <p id="loginErro" class="login-erro" hidden>Usuário ou senha incorretos.</p>
+            <button type="submit" class="adm-btn primario largo">Entrar no painel</button>
+        </form>
+
+        <p class="login-dica" id="loginDica">Acesso padrão: <strong>admin</strong> / <strong>holambier123</strong> (pode ser alterado em Configurações)</p>
+        <a class="login-voltar" href="index.html">&larr; Voltar para o site</a>
+    </div>
+</div>
+
+<!-- ===== APLICAÇÃO DO PAINEL ===== -->
+<div id="app" hidden>
+
+    <!-- Barra administrativa (topo) -->
+    <div class="admin-bar">
+        <div class="admin-bar-esq">
+            <span class="admin-bar-logo">🍺</span>
+            <span class="admin-bar-titulo">Holambier</span>
+            <a href="index.html" target="_blank" rel="noopener" class="admin-bar-link">
+                <i class="fas fa-up-right-from-square"></i> Ver site
+            </a>
+        </div>
+        <div class="admin-bar-dir">
+            <span class="admin-bar-user"><i class="fas fa-circle-user"></i> Olá, <strong id="adminBarUser">admin</strong></span>
+            <button id="btnSair" class="admin-bar-sair" title="Sair">
+                <i class="fas fa-right-from-bracket"></i> Sair
+            </button>
+        </div>
+    </div>
+
+    <div class="admin-corpo">
+        <!-- Menu lateral -->
+        <aside class="admin-sidebar">
+            <nav>
+                <a href="#painel" data-rota="painel"><i class="fas fa-gauge-high"></i> Painel</a>
+                <a href="#paginas" data-rota="paginas"><i class="fas fa-file-lines"></i> Páginas</a>
+                <a href="#midia" data-rota="midia"><i class="fas fa-images"></i> Mídia</a>
+                <a href="#config" data-rota="config"><i class="fas fa-gear"></i> Configurações</a>
+            </nav>
+            <div class="admin-sidebar-rodape">
+                <button id="btnPublicarJson" class="adm-btn secundario largo">
+                    <i class="fas fa-cloud-arrow-up"></i> Publicar p/ o site
+                </button>
+            </div>
+        </aside>
+
+        <!-- Conteúdo -->
+        <main id="adminConteudo" class="admin-conteudo"></main>
+    </div>
+</div>
+
+<!-- ===== CONFIRMAÇÃO GENÉRICA ===== -->
+<div id="modalConfirm" class="adm-overlay" hidden>
+    <div class="adm-modal">
+        <h3 id="confirmTitulo">Confirmar</h3>
+        <p id="confirmMsg"></p>
+        <div class="adm-modal-botoes">
+            <button id="confirmCancelar" class="adm-btn secundario">Cancelar</button>
+            <button id="confirmOk" class="adm-btn perigo">Excluir</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SELETOR DE MÍDIA ===== -->
+<div id="modalMidia" class="adm-overlay" hidden>
+    <div class="adm-modal adm-modal-largo">
+        <h3><i class="fas fa-images"></i> Biblioteca de mídia</h3>
+        <div class="midia-picker-grid" id="midiaPickerGrid"></div>
+        <div class="midia-picker-url">
+            <input type="url" id="midiaPickerUrl" placeholder="https://… ou data:image/… (cole o endereço da imagem)">
+            <button id="midiaPickerUsar" class="adm-btn primario">Usar esta URL</button>
+        </div>
+        <div class="adm-modal-botoes">
+            <button id="midiaPickerFechar" class="adm-btn secundario">Fechar</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== TOASTS ===== -->
+<div id="toastWrap" class="toast-wrap"></div>
+
+<script src="js/cms.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

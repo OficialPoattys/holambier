@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "atualizadoEm": "2026-01-05T10:00:00.000Z",
+  "site": {
+    "titulo": "Holambier",
+    "slogan": "Cervejaria & Restaurante",
+    "whatsapp": "5519996617607",
+    "whatsappMsg": "Olá! Gostaria de mais informações sobre a Holambier.",
+    "instagram": "https://www.instagram.com/holambier/",
+    "googleReview": "https://www.google.com/search?q=holambier+holambra",
+    "tripadvisor": "https://www.tripadvisor.pt/Restaurant_Review-g2572355-d25233735-Reviews-Restaurante_e_Cervejaria_Holambier-Holambra_State_of_Sao_Paulo.html",
+    "cardapio": "https://www.hubt.com.br/holambier/"
+  },
+  "paginas": [
+    {
+      "id": "nossa-cervejaria",
+      "titulo": "Nossa Cervejaria",
+      "slug": "nossa-cervejaria",
+      "status": "publicada",
+      "noMenu": true,
+      "ordem": 10,
+      "criadaEm": "2026-01-05T10:00:00.000Z",
+      "atualizadaEm": "2026-01-05T10:00:00.000Z",
+      "blocos": [
+        {
+          "tipo": "banner",
+          "titulo": "Nossa Cervejaria",
+          "subtitulo": "Do mosto ao copo: conheça a fábrica artesanal que produz cada chopp servido no nosso salão.",
+          "imagem": "",
+          "botaoTexto": "Agende uma visita",
+          "botaoLink": "https://wa.me/5519996617607"
+        },
+        {
+          "tipo": "texto",
+          "subtitulo": "Fábrica aberta, portas abertas",
+          "conteudo": "Aqui dentro, a cerveja não viaja: ela nasce a poucos metros da sua mesa. Nossa fábrica segue a escola cervejeira europeia, com equipamentos modernos e insumos selecionados a cada batelada.\n\nVocê pode acompanhar o processo por trás do salão — e, se quiser, conhecer tudo de perto em uma visita guiada com nossos cervejeiros."
+        },
+        {
+          "tipo": "colunas",
+          "titulo": "Por que a nossa cerveja é diferente?",
+          "itens": [
+            { "emoji": "🏭", "titulo": "Fábrica própria", "texto": "Todo o processo acontece dentro da Holambier, do cozimento do mosto à maturação." },
+            { "emoji": "🌾", "titulo": "Insumos selecionados", "texto": "Maltes e lúpulos de origem controlada, água tratada e leveduras próprias de cada estilo." },
+            { "emoji": "🌷", "titulo": "Toque de Holambra", "texto": "Edições especiais inspiradas na cidade das flores e na herança holandesa da região." }
+          ]
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "O caminho da cerveja",
+          "itens": [
+            { "emoji": "🌱", "titulo": "1. Mostura", "texto": "O malte é moído e misturado à água em temperaturas precisas para extrair os açúcares." },
+            { "emoji": "🔥", "titulo": "2. Fervura", "texto": "O mosto ferve e recebe o lúpulo, que traz amargor, aroma e estabilidade." },
+            { "emoji": "⏳", "titulo": "3. Fermentação", "texto": "A levedura transforma açúcar em álcool e aromas — cada estilo tem sua cepa." },
+            { "emoji": "🧊", "titulo": "4. Maturação", "texto": "A cerveja descansa no frio até atingir equilíbrio. Depois é levada direta pro chopp." }
+          ]
+        },
+        {
+          "tipo": "botoes",
+          "itens": [
+            { "texto": "Ver cardápio completo", "link": "https://www.hubt.com.br/holambier/", "estilo": "primario" },
+            { "texto": "Falar no WhatsApp", "link": "https://wa.me/5519996617607", "estilo": "secundario" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eventos",
+      "titulo": "Eventos & Reservas",
+      "slug": "eventos",
+      "status": "publicada",
+      "noMenu": true,
+      "ordem": 20,
+      "criadaEm": "2026-01-05T10:05:00.000Z",
+      "atualizadaEm": "2026-01-05T10:05:00.000Z",
+      "blocos": [
+        {
+          "tipo": "banner",
+          "titulo": "Eventos & Reservas",
+          "subtitulo": "Aniversários, confrarias, eventos corporativos e degustações guiadas em um cenário único: a cervejaria de Holambra.",
+          "imagem": "",
+          "botaoTexto": "Reservar pelo WhatsApp",
+          "botaoLink": "https://wa.me/5519996617607"
+        },
+        {
+          "tipo": "texto",
+          "subtitulo": "Sua festa com sabor de fábrica",
+          "conteudo": "Nossa estrutura recebe grupos de todos os tamanhos. Monte seu evento com pratos para compartilhar, régua de degustação e aquela hospitalidade holandesa que só Holambra tem.\n\nFale com a nossa equipe: montamos o cardápio sob medida para o seu grupo."
+        },
+        {
+          "tipo": "colunas",
+          "titulo": "Tipos de evento",
+          "itens": [
+            { "emoji": "🎂", "titulo": "Aniversários", "texto": "Salão reservado, cardápio de porções e chopps gelados para todas as idades." },
+            { "emoji": "💼", "titulo": "Corporativos", "texto": "Happy hour e confrarias com degustação guiada e espaço para apresentações." },
+            { "emoji": "🍻", "titulo": "Degustações", "texto": "Régua de 4 estilos com explicação do cervejeiro — a experiência mais completa da casa." }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "subtitulo": "Como reservar",
+          "conteudo": "As reservas são feitas pelo WhatsApp (19) 99661-7607. Informe a data, o número de pessoas e o tipo de evento — nós retornamos com as opções de cardápio e valores."
+        }
+      ]
+    },
+    {
+      "id": "tour-da-fabrica",
+      "titulo": "Tour da Fábrica",
+      "slug": "tour-da-fabrica",
+      "status": "rascunho",
+      "noMenu": false,
+      "ordem": 30,
+      "criadaEm": "2026-01-05T10:10:00.000Z",
+      "atualizadaEm": "2026-01-05T10:10:00.000Z",
+      "blocos": [
+        {
+          "tipo": "banner",
+          "titulo": "Tour da Fábrica",
+          "subtitulo": "Página em construção — em breve, o tour guiado completo pela nossa cervejaria.",
+          "imagem": "",
+          "botaoTexto": "Tenho interesse",
+          "botaoLink": "https://wa.me/5519996617607"
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Estamos preparando uma experiência guiada com história, processo produtivo e degustação final. Esta página está como rascunho para você testar o painel."
+        }
+      ]
+    }
+  ],
+  "midia": []
+}

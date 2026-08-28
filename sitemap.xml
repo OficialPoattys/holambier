@@ -2,20 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://holambier.netlify.app/</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://holambier.netlify.app/quem-somos</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://holambier.netlify.app/quem-somos.html</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://holambier.netlify.app/politica-privacidade</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://holambier.netlify.app/politica-privacidade.html</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://holambier.netlify.app/pagina.html?slug=nossa-cervejaria</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://holambier.netlify.app/pagina.html?slug=eventos</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
