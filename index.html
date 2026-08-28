@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holambier - Cervejaria e Restaurante</title>
+
+    <!-- ===== FAVICON E ICONES PARA DISPOSITIVOS ===== -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="theme-color" content="#2E7D32">
+    <meta name="msapplication-TileColor" content="#2E7D32">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="https://www.hubt.com.br/holambier/" target="_blank">Cardápio</a></li>
+            <li><a href="/quem-somos.html">Quem somos</a></li>
+            <li><a href="/politica-privacidade.html">Política de Privacidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="social-header">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/holambier" target="_blank" aria-label="Instagram" class="social-icon instagram-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Google Avaliações -->
+        <a href="https://www.google.com/search?sca_esv=950999559134ba52&sxsrf=APpeQntP0sqoqLEE3klOQlutEDV9DMvcqQ:1787597379510&q=holambier&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_4gSCZ5ScF9Y3ljlIF3oCHQ-amHtndFw8W07vaMOi-NIiqtqvQxtN-F60VA5deYGMdlO10smxaSkGRQbOfnfFxfHmals&sa=X&ved=2ahUKEwjnh7qW97mWAxVPIbkGHW5xDCAQrrQLegQIHBAA&biw=1858&bih=959&dpr=1" target="_blank" aria-label="Google Avaliações" class="social-icon google-icon" title="Avalie no Google">
+            <i class="fab fa-google"></i>
+        </a>
+
+        <!-- Barra separadora vertical -->
+        <span class="header-divider"></span>
+
+        <!-- TripAdvisor -->
+        <div class="tripadvisor-btn">
+            <a href="https://www.tripadvisor.pt/Restaurant_Review-g2572355-d25233735-Reviews-Restaurante_e_Cervejaria_Holambier-Holambra_State_of_Sao_Paulo.html" target="_blank" title="TripAdvisor">
+                <img src="images/tripadvisor.png" alt="TripAdvisor" class="tripadvisor-logo-header">
+            </a>
+        </div>
+    </div>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- ===== BANNER DE COOKIES ===== -->
+<div id="cookieBanner" class="cookie-banner">
+    <p>🍪 Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="/politica-privacidade.html" style="color: var(--orange);">Política de Privacidade</a>.</p>
+    <div class="btn-group">
+        <button class="btn-accept" id="acceptCookies">Aceitar</button>
+        <button class="btn-refuse" id="refuseCookies">Recusar</button>
+    </div>
+</div>
+
+<!-- ===== WHATSAPP FIXO ===== -->
+<a href="https://wa.me/5519996617607?text=Olá! Gostaria de mais informações sobre a Holambier." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ===== CONTEÚDO PRINCIPAL ===== -->
+<main>
+    <!-- HERO -->
+    <section class="hero hero-banner">
+        <div class="container">
+            <img src="images/logo-grande.png" alt="Holambier Logo" class="hero-logo">
+            <p class="hero-subtitle">Cerveja artesanal e gastronomia de alto nível no coração de Holambra.</p>
+            <a href="https://www.hubt.com.br/holambier/" target="_blank" class="btn-primary">Ver Cardápio Completo</a>
+        </div>
+    </section>
+
+    <!-- DESTAQUES DA GASTRONOMIA E CERVEJARIA -->
+    <section class="container">
+        <div class="destaques-header">
+            <h2 class="section-title">Destaques da Nossa Cozinha</h2>
+            <p class="section-intro">Estes são apenas alguns dos favoritos da nossa casa. Nosso menu conta com uma seleção completa de carnes nobres, porções artesanais e pratos típicos preparados com ingredientes selecionados.</p>
+        </div>
+        <div class="pratos-grid" id="pratosGrid">
+            <!-- gerado via JS -->
+        </div>
+    </section>
+
+    <!-- BEBIDAS E CHOPPS -->
+    <section class="container">
+        <div class="destaques-header">
+            <h2 class="section-title">Destaques da Nossa Cervejaria</h2>
+            <p class="section-intro">Uma prévia dos nossos chopps artesanais mais pedidos. Na nossa régua de degustação você encontra diversos estilos, do mais leve e refrescante ao mais encorpado.</p>
+        </div>
+        <div class="bebidas-grid" id="bebidasGrid">
+            <!-- gerado via JS -->
+        </div>
+    </section>
+
+    <!-- BANNER DE CHAMADA PRO CARDÁPIO COMPLETO -->
+    <section class="container">
+        <div class="cardapio-banner">
+            <h2>Quer explorar todas as nossas opções?</h2>
+            <p>Temos um cardápio variado com pratos individuais, para compartilhar, sobremesas exclusivas e uma carta completa de chopps e drinks.</p>
+            <a href="https://www.hubt.com.br/holambier/" target="_blank" class="btn-cardapio-completo">
+                <i class="fas fa-utensils"></i> Confira Nosso Cardápio Completo
+            </a>
+        </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section class="container">
+        <div class="prova-social">
+            <img src="images/tripadvisor.png" alt="TripAdvisor" class="tripadvisor-logo-social">
+            <div class="estrelas">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"Excelente comida e ambiente! Nota 4,5 no TripAdvisor."</p>
+            <a href="https://www.tripadvisor.pt/Restaurant_Review-g2572355-d25233735-Reviews-Restaurante_e_Cervejaria_Holambier-Holambra_State_of_Sao_Paulo.html" target="_blank">Veja nossas avaliações</a>
+        </div>
+    </section>
+</main>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <img id="modalImg" src="" alt="Detalhe">
+        <div class="modal-body">
+            <h2 id="modalTitle"></h2>
+            <div id="modalBadge" style="margin-bottom: 12px;"></div>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Funcionamento</h4>
+            <p><strong>Domingo:</strong> 12:00 – 20:00</p>
+            <p><strong>Seg–Qui:</strong> 17:00 – 22:00</p>
+            <p><strong>Sexta:</strong> 17:00 – 23:00</p>
+            <p><strong>Sábado:</strong> 12:00 – 23:00</p>
+            <p style="margin-top: 8px; font-size: 0.85rem; color: var(--orange);">Atendimento normal em feriados.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Localização</h4>
+            <p>Rua Rota dos Imigrantes, 653 - Esquina do Boulevard Holandês<br>
+            Centro, Holambra - SP, CEP 13825-067</p>
+            <div style="margin-top: 12px; border-radius: 8px; overflow: hidden; max-width: 100%;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.889!2d-47.058!3d-22.633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b6b0b0b0b0b0%3A0x0!2zMjLCsDM3JzU4LjgiUyA0N8KwMDMnMjguOCJX!5e0!3m2!1spt-BR!2sbr!4v1647000000000" 
+                    width="100%" 
+                    height="160" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato e Redes</h4>
+            <p><i class="fab fa-whatsapp" style="color: #25D366;"></i> (19) 99661-7607</p>
+            <div class="footer-social-links" style="margin-top: 15px;">
+                <a href="https://www.instagram.com/holambier/" target="_blank" class="footer-btn-social instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.tripadvisor.pt/Restaurant_Review-g2572355-d25233735-Reviews-Restaurante_e_Cervejaria_Holambier-Holambra_State_of_Sao_Paulo.html" target="_blank" class="footer-btn-social tripadvisor">
+                    <img src="images/tripadvisor-footer.png" alt="TripAdvisor"> TripAdvisor
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        Copyright &copy; <span id="currentYear"></span> Holambier – todos os direitos reservados. 
+        <span class="footer-credit">Feito por <a href="https://www.instagram.com/skyggerstudio/" target="_blank" rel="noopener noreferrer">Skygger Studio</a></span>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
