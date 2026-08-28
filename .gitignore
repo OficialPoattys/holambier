@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+package-lock.json.bak
+
+# Build / saída
+dist/
+build/
+out/
+.cache/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
